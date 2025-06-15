@@ -15,14 +15,15 @@
 
   <main class="container">
     <section class="section-random">
-      <a class="btn" href="/rand">Enter a Webring!</a>
+      <a class="btn" href="/rand">Enter the Webring!</a>
     </section>
 
     <section class="section-members">
       <h2 class="section-title">Our Team</h2>
       <ul class="member-list">
         {{ range .Sites }}
-        <li class="member-card {{ if eq .Role "core" }}core-member{{ end }}">
+        <li class="member-card 
+    {{ if eq .Role "core" }}core-member{{ else if eq .Role "deputy" }}deputy-member{{ end }}">
           <a class="member-link" href="{{ .URL | safe }}" target="_blank">
             <strong>{{ .Name }}</strong>
           </a>
