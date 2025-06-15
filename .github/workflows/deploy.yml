@@ -1,4 +1,4 @@
-name: Build and Deploy Webring
+name: Deploy Webring to GitHub Pages
 
 on:
   push:
@@ -9,16 +9,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
-      - name: Set up Go
+      - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version: '1.22' 
+          go-version: '1.21'
 
-      - name: Generate static site
-        run: go run ./main.go
+      - name: Build static site
+        run: go run main.go
 
-      # - name: Run Dev Server
-      #   run: go run ./devserver.go
+      - name: Upload to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
