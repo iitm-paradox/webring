@@ -1,0 +1,24 @@
+name: Validate members.toml
+
+on:
+  pull_request:
+    paths:
+      - 'data/members.toml'
+  push:
+    paths:
+      - 'data/members.toml'
+
+jobs:
+  toml-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Python + toml-linter
+        run: |
+          pip install toml
+
+      - name: Validate members.toml
+        run: |
+          python -c "import toml; toml.load(open('data/members.toml'))"
