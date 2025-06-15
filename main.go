@@ -61,7 +61,7 @@ func main() {
 		log.Fatalf("Error generating index.html: %v", err)
 	}
 	log.Println("Generated index.html")
-	
+
 	randDir := filepath.Join(outputDir, "rand")
 	if err := os.MkdirAll(randDir, 0755); err != nil {
 		log.Fatalf("Error creating rand directory: %v", err)
@@ -143,6 +143,13 @@ func generateFile(templateName, templatePath, outputPath string, data interface{
 				return s
 			}
 			return strings.ToUpper(string(s[0])) + strings.ToLower(s[1:])
+		},
+		"split": strings.Split,
+		"last": func(arr []string) string {
+			if len(arr) == 0 {
+				return ""
+			}
+			return arr[len(arr)-1]
 		},
 	}
 
