@@ -1,3 +1,4 @@
+/* Base */
 body {
   background-color: #1e1e2e;
   color: #cdd6f4;
@@ -14,93 +15,115 @@ a:hover {
   color: #f5c2e7;
 }
 
+/* Header */
 .header {
   text-align: center;
   padding: 2rem 1rem;
   border-bottom: 1px dashed #6c7086;
 }
-
 .title {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
-
 .subtitle {
   font-size: 1rem;
   color: #a6adc8;
 }
 
+/* Layout */
 .container {
-  max-width: 800px;
+  max-width: 960px;
   margin: auto;
   padding: 2rem 1rem;
 }
-
 .section-random {
   text-align: center;
   margin-bottom: 2rem;
 }
-
 .btn {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.25rem;
   background-color: #89b4fa;
   color: #1e1e2e;
   border-radius: 8px;
   font-weight: 600;
+  transition: background 0.2s ease;
 }
-
 .btn:hover {
   background-color: #b4befe;
 }
 
+/* Sections */
 .section-title {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   border-bottom: 2px solid #6c7086;
+  padding-bottom: 0.25rem;
 }
 
+/* Member Cards */
 .member-list {
   list-style: none;
   padding: 0;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
 }
 
 .member-card {
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: #313244;
   border-left: 4px solid #585b70;
+  transition: box-shadow 0.2s ease;
+}
+.member-card:hover {
+  box-shadow: 0 0 8px rgba(100, 100, 150, 0.2);
 }
 
-.member-card.core-member {
-  border-left-color: #f9e2af;
-  background-color: #45475a;
+.member-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #cdd6f4;
+}
+.member-link:hover {
+  text-decoration: underline;
 }
 
 .about {
   font-size: 0.95rem;
   color: #a6adc8;
+  margin-top: 0.25rem;
 }
 
 .contact {
   font-size: 0.85rem;
   color: #9399b2;
+  margin-top: 0.5rem;
 }
 
+/* Role: Core */
+.member-card.core-member {
+  border-left-color: #facc15;
+  background-color: #334155;
+}
+.member-card.core-member .member-link {
+  color: #facc15;
+}
+
+/* Role: Deputy */
+.member-card.deputy-member {
+  border-left-color: #FF9999;
+  background-color:  #42455C;
+}
+.member-card.deputy-member .member-link {
+  color: #38bdf8;
+}
+
+/* Footer */
 .footer {
   text-align: center;
   font-size: 0.85rem;
   padding: 1rem;
   border-top: 1px dashed #6c7086;
   color: #a6adc8;
-}
-
-.member-card.core-member {
-    border-left: 4px solid #facc15; 
-    background-color: #334155;
-}
-
-.member-card.core-member .member-link {
-    color: #facc15; 
 }
