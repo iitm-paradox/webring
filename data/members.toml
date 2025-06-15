@@ -8,6 +8,15 @@ owner = ""
 role = "core"
 
 [[members]]
+name = "Shantanu Ramanujapuram"
+slug = "shan10"
+about = "The deputy."
+url = "https://shantanu.ramanujapuram.com/"
+github = "https://github.com/shanten"
+owner = "shantanu@ramanujapuram.com"
+role = "core"
+
+[[members]]
 name = "Alok Ranjan"
 slug = "ryu"
 about = "..."
