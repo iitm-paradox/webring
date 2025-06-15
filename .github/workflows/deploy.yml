@@ -20,5 +20,5 @@ jobs:
       - name: Generate static site
         run: go run ./main.go
 
-      - name: Run Dev Server
-        run: go run ./devserver.go
+      # - name: Run Dev Server
+      #   run: go run ./devserver.go
