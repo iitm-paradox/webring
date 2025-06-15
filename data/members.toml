@@ -10,11 +10,11 @@ role = "core"
 [[members]]
 name = "Shantanu Ramanujapuram"
 slug = "shan10"
-about = "The deputy."
+about = "The deputy; be curious, not judgmental"
 url = "https://shantanu.ramanujapuram.com/"
 github = "https://github.com/shanten"
 owner = "shantanu@ramanujapuram.com"
-role = "core"
+role = "deputy"
 
 [[members]]
 name = "Alok Ranjan"
