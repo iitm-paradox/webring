@@ -1,0 +1,12 @@
+<script>
+    const siteLinks = [
+      
+        "https:\/\/yuvishere.co.in\/",
+      
+        "https:\/\/alokranjan.me\/"
+      
+    ];
+
+    const randomIndex = Math.floor(Math.random() * siteLinks.length);
+    window.location.href = siteLinks[randomIndex];
+</script>
