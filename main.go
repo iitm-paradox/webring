@@ -61,8 +61,19 @@ func main() {
 		log.Fatalf("Error generating index.html: %v", err)
 	}
 	log.Println("Generated index.html")
+	
+	randDir := filepath.Join(outputDir, "rand")
+	if err := os.MkdirAll(randDir, 0755); err != nil {
+		log.Fatalf("Error creating rand directory: %v", err)
+	}
 
-	err = generateFile("random.html", filepath.Join(templatesDir, "random.html"), filepath.Join(outputDir, "rand"), commonPageData)
+	err = generateFile(
+		"random.html",
+		filepath.Join(templatesDir, "random.html"),
+		filepath.Join(outputDir, "rand", "index.html"),
+		commonPageData,
+	)
+
 	if err != nil {
 		log.Fatalf("Error generating random.html: %v", err)
 	}
