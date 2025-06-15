@@ -1,0 +1,106 @@
+body {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #89b4fa;
+}
+a:hover {
+  color: #f5c2e7;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 1px dashed #6c7086;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #a6adc8;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.section-random {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: #89b4fa;
+  color: #1e1e2e;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #b4befe;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #6c7086;
+}
+
+.member-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.member-card {
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #313244;
+  border-left: 4px solid #585b70;
+}
+
+.member-card.core-member {
+  border-left-color: #f9e2af;
+  background-color: #45475a;
+}
+
+.about {
+  font-size: 0.95rem;
+  color: #a6adc8;
+}
+
+.contact {
+  font-size: 0.85rem;
+  color: #9399b2;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 1rem;
+  border-top: 1px dashed #6c7086;
+  color: #a6adc8;
+}
+
+.member-card.core-member {
+    border-left: 4px solid #facc15; 
+    background-color: #334155;
+}
+
+.member-card.core-member .member-link {
+    color: #facc15; 
+}

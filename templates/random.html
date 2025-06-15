@@ -1,0 +1,10 @@
+<script>
+    const siteLinks = [
+      {{ range $i, $site := .Sites }}
+        "{{ $site.URL | safe }}"{{ if not (eq $i (sub (len $.Sites) 1)) }},{{ end }}
+      {{ end }}
+    ];
+
+    const randomIndex = Math.floor(Math.random() * siteLinks.length);
+    window.location.href = siteLinks[randomIndex];
+</script>

@@ -1,0 +1,16 @@
+[[members]]
+name = "Yuvraj Sharma"
+slug = "yuv"
+about = "The core."
+url = "https://yuvishere.co.in/"
+github = "https://github.com/realyuvishere"
+owner = ""
+role = "core"
+
+[[members]]
+name = "Alok Ranjan"
+slug = "ryu"
+about = "..."
+url = "https://alokranjan.me/"
+rss = "https://github.com/ryu-ryuk"
+owner = "alokraj3850@gmail.com"
