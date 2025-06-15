@@ -20,18 +20,30 @@
 
     <section class="section-members">
       <h2 class="section-title">Our Team</h2>
-      <ul class="member-list">
-        {{ range .Sites }}
-        <li class="member-card 
-    {{ if eq .Role "core" }}core-member{{ else if eq .Role "deputy" }}deputy-member{{ end }}">
-          <a class="member-link" href="{{ .URL | safe }}" target="_blank">
-            <strong>{{ .Name }}</strong>
-          </a>
-          <p class="about">{{ .About }}</p>
-          <p class="contact">📧 {{ .Owner }}</p>
-        </li>
-        {{ end }}
-      </ul>
+        <ul class="member-list">
+          {{ range .Sites }}
+          <li class="member-card 
+            {{ if eq .Role "core" }}core-member{{ else if eq .Role "deputy" }}deputy-member{{ end }}">
+            <a class="member-link" href="{{ .URL | safe }}" target="_blank">
+              <strong>{{ .Name }}</strong>
+            </a>
+            <p class="about">{{ .About }}</p>
+
+            {{ if .GitHub }}
+            <p class="contact">
+              🔗 <a href="{{ .GitHub }}" target="_blank">
+                <code>{{ last (split .GitHub "/") }}</code>
+              </a>
+            </p>
+            {{ end }}
+
+            {{ if .Owner }}
+            <p class="contact">📧 {{ .Owner }}</p>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+
     </section>
   </main>
 
