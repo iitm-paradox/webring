@@ -5,7 +5,7 @@
 
 
 --- 
-how to add a new entry to the website? 
+# how to add a new entry to the website? 
 
 1. make a change to the data/members.toml file.
 2. add your entry/details
