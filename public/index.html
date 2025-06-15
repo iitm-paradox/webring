@@ -21,21 +21,29 @@
     <section class="section-members">
       <h2 class="section-title">Our Team</h2>
       <ul class="member-list">
-        {{ range .Sites }}
-        <li class="member-card {{ if eq .Role "core" }}core-member{{ end }}">
-          <a class="member-link" href="{{ .URL | safe }}" target="_blank">
-            <strong>{{ .Name }}</strong>
+        
+        <li class="member-card core-member">
+          <a class="member-link" href="https://yuvishere.co.in/" target="_blank">
+            <strong>Yuvraj Sharma</strong>
           </a>
-          <p class="about">{{ .About }}</p>
-          <p class="contact">📧 {{ .Owner }}</p>
+          <p class="about">The core.</p>
+          <p class="contact">📧 </p>
         </li>
-        {{ end }}
+        
+        <li class="member-card ">
+          <a class="member-link" href="https://alokranjan.me/" target="_blank">
+            <strong>Alok Ranjan</strong>
+          </a>
+          <p class="about">...</p>
+          <p class="contact">📧 alokraj3850@gmail.com</p>
+        </li>
+        
       </ul>
     </section>
   </main>
 
   <footer class="footer">
-    <p>Last updated: {{ .CurrentTime }}</p>
+    <p>Last updated: June 15, 2025 at 23:07 IST</p>
     <p>
       Maintained by <strong>Paradox WebOps</strong> —
       <a href="https://github.com/iitm-paradox/webring">View on GitHub</a>
