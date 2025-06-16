@@ -23,7 +23,7 @@
 > Replace **YOUR_SLUG** with the slug that you are using for yourself.
 
 <details>
-<summary>styling the webring?</summary>
+<summary>styling the webring? (however it suits you)</summary>
 
 ```html
 <!-- WebOps Webring Badge -->
