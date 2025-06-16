@@ -23,3 +23,11 @@ about = "**********"
 url = "https://alokranjan.me/"
 github = "https://github.com/ryu-ryuk"
 owner = "alokraj3850@gmail.com"
+
+[[members]]
+name = "Mayank Bisht"
+slug = "maynkudu"
+about = "i code."
+url = "https://maynkudu.vercel.app/"
+github = "https://github.com/maynkudu"
+owner = "maynkudu@gmail.com"
