@@ -31,5 +31,4 @@
   <a href="https://iitm-paradox.github.io/webring/" target="_blank" style="margin: 0 0.5rem; text-decoration: none;">WebOps Webring</a>
   <a href="https://iitm-paradox.github.io/webring/YOUR_SLUG/next" target="_blank" style="margin: 0 0.5rem; text-decoration: none;">&rarr;</a>
 </div>
-</details>
    
