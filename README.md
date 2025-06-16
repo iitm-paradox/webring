@@ -19,7 +19,8 @@
 <a href="https://iitm-paradox.github.io/webring/">WebOps Webring</a>
 <a href="https://iitm-paradox.github.io/webring/YOUR_SLUG/next">&rarr;</a>
 ```
-
+>[!IMPORTANT]
+> Replace **YOUR_SLUG** with the slug that you are using for yourself.
 
 <details>
 <summary>styling the webring?</summary>
