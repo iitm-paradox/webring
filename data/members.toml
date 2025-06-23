@@ -21,7 +21,7 @@ name = "Alok Ranjan"
 slug = "ryu"
 about = "surviving :c"
 url = "https://alokranjan.me/"
-github = "https://github.com/ryu-ryuk"
+github = "ryu-ryuk"
 owner = "alokraj3850@gmail.com"
 
 [[members]]
