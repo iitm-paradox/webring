@@ -39,3 +39,11 @@ about = "The Chill Autistic Guy"
 url = "https://purunjay-portfolio.vercel.app/"
 github = "https://github.com/ChPuru"
 owner = "puruchoudhary9b@gmail.com"
+
+[[members]]
+name = "Nitin Yadav"
+slug = "nitinya9av"
+about = "don't know XD"
+url = "https://nitinya9av.me/"
+github = "https://github.com/nitinya9av"
+owner = "nitinya9av@gmail.com"
