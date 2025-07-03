@@ -47,3 +47,11 @@ about = "don't know XD"
 url = "https://nitinya9av.me/"
 github = "https://github.com/nitinya9av"
 owner = "nitinya9av@gmail.com"
+
+[[members]]
+name = "Aviral Dewan"
+slug = "dewan-sahib"
+about = "I ♥ CS"
+url = "https://www.linkedin.com/in/aviraldewan/"
+github = "https://github.com/dewan-sahib"
+owner = "aviraldewan@gmail.com"
