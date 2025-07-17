@@ -15,9 +15,9 @@
 # how do i use the webring in my portfolio? 
 
 ```html
-<a href="https://iitm-paradox.github.io/webring/YOUR_SLUG/previous">&larr;</a>
-<a href="https://iitm-paradox.github.io/webring/">WebOps Webring</a>
-<a href="https://iitm-paradox.github.io/webring/YOUR_SLUG/next">&rarr;</a>
+<a href="https://webops.iitmparadox.org/YOUR_SLUG/previous">&larr;</a>
+<a href="https://webops.iitmparadox.org/">WebOps Webring</a>
+<a href="https://webops.iitmparadox.org/YOUR_SLUG/next">&rarr;</a>
 ```
 >[!IMPORTANT]
 > Replace **YOUR_SLUG** with the slug that you are using for yourself.
@@ -28,8 +28,8 @@
 ```html
 <!-- WebOps Webring Badge -->
 <div style="text-align: center; margin: 2rem 0; font-size: 0.95rem; color: gray;">
-  <a href="https://iitm-paradox.github.io/webring/YOUR_SLUG/previous" target="_blank" style="margin: 0 0.5rem; text-decoration: none;">&larr;</a>
-  <a href="https://iitm-paradox.github.io/webring/" target="_blank" style="margin: 0 0.5rem; text-decoration: none;">WebOps Webring</a>
-  <a href="https://iitm-paradox.github.io/webring/YOUR_SLUG/next" target="_blank" style="margin: 0 0.5rem; text-decoration: none;">&rarr;</a>
+  <a href="https://webops.iitmparadox.org/YOUR_SLUG/previous" target="_blank" style="margin: 0 0.5rem; text-decoration: none;">&larr;</a>
+  <a href="https://webops.iitmparadox.org/" target="_blank" style="margin: 0 0.5rem; text-decoration: none;">WebOps Webring</a>
+  <a href="https://webops.iitmparadox.org/YOUR_SLUG/next" target="_blank" style="margin: 0 0.5rem; text-decoration: none;">&rarr;</a>
 </div>
    
